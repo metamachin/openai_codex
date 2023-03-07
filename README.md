@@ -6,3 +6,6 @@
 ### To deploy your app - use https://render.com -> New -> Web Service -> Add env vars
 
 ### Deploy frontend on vercel.com
+
+### How to deploy
+1. Change localhost to render.com URL in client/script.js/

@@ -86,9 +86,9 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const serveURL = 'https://codex-le3s.onrender.com/'
+    // const serveURL = 'https://codex-le3s.onrender.com/'
     // const serverURL = 'http://localhost:5000/'
-    const response = await fetch(serverURL, {
+    const response = await fetch('https://codex-le3s.onrender.com/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

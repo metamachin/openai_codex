@@ -1,5 +1,5 @@
-// const serveURL = 'https://codex-le3s.onrender.com/'
-const serverURL = 'http://localhost:5000/'
+const serveURL = 'https://codex-le3s.onrender.com/'
+// const serverURL = 'http://localhost:5000/'
 
 
 import bot from './assets/bot.svg'

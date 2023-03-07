@@ -1,7 +1,3 @@
-const serveURL = 'https://codex-le3s.onrender.com/'
-// const serverURL = 'http://localhost:5000/'
-
-
 import bot from './assets/bot.svg'
 import user from './assets/user.svg'
 
@@ -90,7 +86,8 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-
+    const serveURL = 'https://codex-le3s.onrender.com/'
+    // const serverURL = 'http://localhost:5000/'
     const response = await fetch(serverURL, {
         method: 'POST',
         headers: {

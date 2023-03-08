@@ -8,4 +8,6 @@
 ### Deploy frontend on vercel.com
 
 ### How to deploy
-1. Change localhost to render.com URL in client/script.js/
+1. Change MongoDB url from localhost to MongoDB Atlas in .env file
+2. Change localhost to render.com URL in client/script.js/
+2. Go to render.com and manually deploy latest commit.

@@ -29,13 +29,13 @@ app.post('/', async (req, res) => {
 
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      max_tokens: 2048,
-      // min_tokens: 100,
-      temperature: 0.2,
-      top_p: 0.8,
-      frequency_penalty: 0.0,
-      presence_penalty: 0.0,
-      prompt: `${prompt}`
+      prompt: prompt,
+      temperature: 0.9,
+      max_tokens: 200,
+      top_p: 1,
+      frequency_penalty: 0,
+      presence_penalty: 0.6,
+      // prompt: `${prompt}`
 
       // temperature () Higher values means the model will take more risks.
       // max_tokens: 3000, 

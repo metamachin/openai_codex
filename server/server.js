@@ -30,6 +30,7 @@ app.post('/', async (req, res) => {
     const response = await openai.createCompletion({
       model: "text-davinci-003",
       max_tokens: 2048,
+      // min_tokens: 100,
       temperature: 0.2,
       top_p: 0.8,
       frequency_penalty: 0.0,
@@ -56,4 +57,5 @@ app.post('/', async (req, res) => {
   }
 })
 
-app.listen(5000, () => console.log('AI server started on http://localhost:5000'))
+const PORT = process.env.PORT || 5000;
+app.listen(5000, () => console.log(`AI server started on port ${PORT}`));
